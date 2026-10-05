@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>세무사 소개 | TAX CHOI 세무법인 택스테크 울산분사무소</title>
+<title>구성원 | TAX TECH 세무법인 택스테크 울산분사무소</title>
 <meta name="description" content="대표세무사 최주익, 세무사 최희정의 프로필, 경력, 전문분야를 소개합니다.">
 <meta name="theme-color" content="#0b1f3f">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b1f3f'/%3E%3Ctext x='16' y='23' font-size='20' font-weight='700' text-anchor='middle' fill='white' font-family='serif'%3ET%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko_KR">
-<meta property="og:site_name" content="TAX CHOI | 세무법인 택스테크 울산분사무소">
-<meta property="og:title" content="세무사 소개 | TAX CHOI 세무법인 택스테크 울산분사무소">
+<meta property="og:site_name" content="TAX TECH | 세무법인 택스테크 울산분사무소">
+<meta property="og:title" content="구성원 | TAX TECH 세무법인 택스테크 울산분사무소">
 <meta property="og:description" content="대표세무사 최주익, 세무사 최희정의 프로필, 경력, 전문분야를 소개합니다.">
 <meta property="og:url" content="https://heerxoon-pusan.github.io/heejung/team.html">
 <meta property="og:image" content="https://heerxoon-pusan.github.io/heejung/share.jpg">
@@ -568,7 +568,7 @@ form button:disabled{opacity:.6;cursor:wait;transform:none}
   *{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
 }
 
-/* ===== TAX CHOI 개편 ===== */
+/* ===== TAX TECH 개편 ===== */
 /* 모바일 메뉴 */
 .menu-btn{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:6px;background:#fff;cursor:pointer;align-items:center;justify-content:center;padding:0}
 .menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:18px;height:2px;background:var(--navy);position:relative;transition:transform .25s,background .25s}
@@ -590,14 +590,14 @@ form button:disabled{opacity:.6;cursor:wait;transform:none}
   .gnb a::after{display:none}
 }
 
-/* 첫 화면: TAX CHOI */
+/* 첫 화면: TAX TECH */
 .brand b{letter-spacing:.06em}
 .hero h1.wordmark{font-family:var(--sans);font-weight:800;letter-spacing:.07em;font-size:clamp(3rem,9vw,5.6rem);line-height:1.02;margin:0 0 12px}
 .tagline{margin:0 0 20px;font-family:var(--serif);font-size:clamp(1.3rem,3vw,1.9rem);font-weight:700;color:var(--blue);letter-spacing:-.01em}
 .anim .hero .tagline{opacity:0;animation:fadeUp .5s ease .2s forwards}
 .hero{padding-bottom:72px}
 
-/* 왜 TAX CHOI인가요 */
+/* 왜 TAX TECH인가요 */
 .why-grid{display:grid;grid-template-columns:repeat(4,1fr);list-style:none;margin:36px 0 0;padding:0;border-top:2px solid var(--navy)}
 .why-grid li{padding:26px 22px 10px;border-left:1px solid var(--line)}
 .why-grid li:first-child{border-left:0;padding-left:0}
@@ -674,17 +674,73 @@ blockquote.q{margin:0 0 14px;padding:2px 0 2px 14px;border-left:3px solid var(--
   .person-block{padding:44px 0}
 }
 
-/* 세무 이야기 */
-.posts{display:grid;gap:28px}
-.post{border-top:2px solid var(--navy);padding-top:18px}
-.post h2{font-family:var(--serif);font-size:1.5rem;margin:0 0 6px;letter-spacing:-.01em}
-.post h2 a{color:var(--navy);text-decoration:none}
-.post .meta{margin:0 0 14px;color:var(--muted);font-size:.9rem}
-.post .body{max-width:44em}
-.empty{border:1px dashed #b9c3d6;border-radius:6px;background:var(--soft);padding:36px 28px;text-align:center}
-.empty h2{font-family:var(--serif);font-size:1.4rem;margin:0 0 8px;color:var(--navy)}
-.empty p{margin:0 0 18px;color:var(--muted)}
-.posts:has(.post) + .empty{display:none}
+
+/* ===== 구성원 카드 + 프로필 팝업 ===== */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.members-sec{padding:56px 0 80px}
+.members{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.mcard{position:relative;display:block;min-height:380px;border:1px solid var(--line);border-radius:24px;background:#fff;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s}
+.mcard:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(11,31,63,.12);border-color:#cfd6e3}
+.mcard .mtxt{position:relative;z-index:2;width:62%;padding:44px 0 40px 40px;display:flex;flex-direction:column;align-items:flex-start;min-height:380px}
+.mname{margin:0;font-size:clamp(2rem,3.6vw,2.6rem);line-height:1.2;letter-spacing:-.02em;color:var(--navy);font-weight:800}
+.mrole{margin:6px 0 20px;font-size:1.2rem;color:var(--muted)}
+.mchips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0;max-width:300px}
+.mchips li{background:#f4f5f7;border-radius:999px;padding:5px 14px;font-size:.9rem;color:#454d5c}
+.mq{margin:0;color:var(--ink);font-size:1rem;line-height:1.75}
+.mopen{margin-top:auto;padding:0;border:0;background:none;font:inherit;font-weight:700;color:var(--blue);cursor:pointer}
+.mopen::before{content:"";position:absolute;inset:0;z-index:3}
+.mopen::after{content:" →";transition:margin .25s}
+.mcard:hover .mopen::after{margin-left:6px}
+.mopen:focus-visible{outline:0}
+.mcard:has(.mopen:focus-visible){outline:3px solid var(--blue);outline-offset:3px}
+.mcard .ph{position:absolute;right:0;top:0;bottom:0;width:44%;aspect-ratio:auto;border:0;border-radius:0;box-shadow:none;background-position:center top;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 22%);mask-image:linear-gradient(to right,transparent 0,#000 22%)}
+
+dialog.pm{border:0;padding:0;width:min(940px,calc(100% - 24px));max-width:none;max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);border-radius:18px;overflow:hidden;background:#fff;color:var(--ink);box-shadow:0 30px 80px rgba(0,0,0,.35)}
+dialog.pm::backdrop{background:rgba(11,31,63,.6)}
+html.pm-lock{overflow:hidden}
+.pm-scroll{max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow:auto;overscroll-behavior:contain}
+.pm-x{position:absolute;top:14px;right:18px;z-index:5;width:44px;height:44px;border:0;border-radius:50%;background:transparent;color:#fff;font-size:2.2rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0 0 4px}
+.pm-x:hover{background:rgba(255,255,255,.16)}
+.pm-head{position:relative;min-height:340px;padding:52px 44px 40px;color:#fff;background:linear-gradient(180deg,#1d3d82 0%,#2f62c8 100%);overflow:hidden}
+.pm-info{position:relative;z-index:2;max-width:56%}
+.pm-info h2{margin:0 0 26px;color:#fff;font-size:2.4rem;line-height:1.2;font-weight:800;letter-spacing:-.02em}
+.pm-info h2 small{font-size:1.25rem;font-weight:500;margin-left:6px}
+.pm-info h3{margin:0 0 12px;font-size:1.5rem;font-weight:500;color:#fff}
+.pm-ct{list-style:none;margin:0 0 22px;padding:0}
+.pm-ct li{display:grid;grid-template-columns:22px 1fr;gap:12px;padding:5px 0;font-size:1rem;line-height:1.55;overflow-wrap:anywhere}
+.pm-ct svg{width:20px;height:20px;margin-top:3px;fill:none;stroke:#fff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.pm-ct a{text-decoration:none}
+.pm-ct a:hover{text-decoration:underline}
+.btn.pm-cta{background:#fff;color:var(--navy);border-color:#fff;padding:11px 20px;font-size:.95rem}
+.btn.pm-cta:hover{background:#eef2fa;border-color:#eef2fa}
+.pm-head .ph{position:absolute;right:48px;bottom:0;height:90%;aspect-ratio:3/4;width:auto;border-radius:12px 12px 0 0;border:0;box-shadow:none;background-color:rgba(255,255,255,.14)}
+.pm-body{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 44px;padding:36px 44px 44px;font-size:.96rem}
+.mh{margin:26px 0 8px;font-size:1.15rem;color:#0b57e3;color:var(--blue);font-weight:800}
+.pm-body>div>.mh:first-child{margin-top:0}
+.pm-body .two-col{grid-template-columns:1fr;gap:18px}
+.pm-body .cv.cols2{column-count:1}
+.pm-body .field-tags{margin-bottom:10px}
+.pm-body .field-note{margin:0 0 4px;font-size:.88rem;color:var(--muted);line-height:1.6}
+@media(max-width:860px){
+  .members{grid-template-columns:1fr}
+  .mcard,.mcard .mtxt{min-height:320px}
+  .mcard .mtxt{padding:34px 0 30px 28px}
+}
+@media(max-width:700px){
+  .members-sec{padding:36px 0 60px}
+  .mcard .mtxt{width:64%;padding-left:24px}
+  .mcard .ph{width:42%}
+  .pm-head{min-height:300px;padding:48px 20px 26px}
+  .pm-info{max-width:66%}
+  .pm-info h2{font-size:1.9rem;margin-bottom:18px}
+  .pm-info h2 small{display:block;margin:4px 0 0;font-size:1.05rem}
+  .pm-info h3{font-size:1.2rem}
+  .pm-ct li{font-size:.9rem}
+  .pm-head .ph{right:0;height:46%;width:34%;aspect-ratio:3/4;border-radius:10px 0 0 0}
+  .pm-body{grid-template-columns:1fr;padding:26px 20px 36px;gap:0}
+  .pm-body>div+div{margin-top:26px}
+}
+@media(prefers-reduced-motion:reduce){.mcard,.mcard:hover{transition:none;transform:none}}
 </style>
 <style id="photos">
 :root{
@@ -697,12 +753,11 @@ blockquote.q{margin:0 0 14px;padding:2px 0 2px 14px;border-left:3px solid var(--
 <a class="skip" href="#main">본문 바로가기</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html" aria-label="TAX CHOI 처음으로"><b>TAX CHOI</b><span>세무법인 택스테크 울산분사무소</span></a>
+    <a class="brand" href="index.html" aria-label="TAX TECH 처음으로"><b>TAX TECH</b><span>세무법인 택스테크 울산분사무소</span></a>
     <nav class="gnb" id="gnb" aria-label="주요 메뉴">
-      <a href="about.html">TAX CHOI 소개</a>
-      <a href="team.html" aria-current="page">세무사 소개</a>
+      <a href="about.html">TAX TECH 소개</a>
+      <a href="team.html" aria-current="page">구성원</a>
       <a href="index.html#services">업무 분야</a>
-      <a href="stories.html">세무 이야기</a>
       <a href="index.html#consult">상담·오시는 길</a>
     </nav>
     <a class="call" href="tel:0522572680">전화 상담</a>
@@ -713,103 +768,117 @@ blockquote.q{margin:0 0 14px;padding:2px 0 2px 14px;border-left:3px solid var(--
 <main id="main">
 <section class="sub-hero" id="top">
   <div class="wrap">
-    <p class="crumb"><a href="index.html">홈</a> / 세무사 소개</p>
-    <h1>세무사 소개</h1>
-    <p class="sublead">세무 업무를 맡기기 전, 담당 세무사의 경험과 경력을 확인해 보십시오.</p>
-    <p class="big-quote">최주익 세무사의 오랜 경험과<br>최희정 세무사의 새로운 시각이 함께합니다.</p>
-    <div class="jump">
-      <a class="btn line" href="#juik">최주익 세무사</a>
-      <a class="btn line" href="#heejung">최희정 세무사</a>
+    <p class="crumb"><a href="index.html">홈</a> / 구성원</p>
+    <h1>구성원</h1>
+    <p class="sublead">담당 세무사를 선택하시면 경력과 연락처를 확인하실 수 있습니다.</p>
+  </div>
+</section>
+
+<section class="members-sec" aria-label="구성원 목록">
+  <div class="wrap">
+    <div class="members">
+      <article class="mcard rv" id="juik">
+        <div class="mtxt">
+          <h2 class="mname">최주익</h2>
+          <p class="mrole">대표세무사</p>
+          <ul class="mchips">
+            <li>상속세</li><li>증여세</li><li>양도소득세</li><li>세무조사·불복 대응</li><li>지방세</li><li>회계·세무 실무</li>
+          </ul>
+          <button type="button" class="mopen" data-open="juik" aria-haspopup="dialog">프로필 보기<span class="sr"> – 최주익 대표세무사</span></button>
+        </div>
+        <div class="ph ju" role="img" aria-label="대표세무사 최주익 프로필 사진"></div>
+      </article>
+
+      <article class="mcard rv" id="heejung">
+        <div class="mtxt">
+          <h2 class="mname">최희정</h2>
+          <p class="mrole">세무사</p>
+          <p class="mq">어렵고 복잡한 세금 이야기를<br>이해하기 쉽게 설명하고<br>빠르게 소통합니다.</p>
+          <button type="button" class="mopen" data-open="heejung" aria-haspopup="dialog">프로필 보기<span class="sr"> – 최희정 세무사</span></button>
+        </div>
+        <div class="ph hj" role="img" aria-label="세무사 최희정 프로필 사진"></div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="person-block" id="juik">
-  <div class="wrap">
-    <div class="tm">
-      <div class="rv"><div class="ph ju" role="img" aria-label="대표세무사 최주익 프로필 사진"></div></div>
-      <div class="rv">
-        <span class="role">대표세무사</span>
-        <h2 class="name">최주익</h2>
-        <blockquote class="q">오랜 세무 실무 경험을 바탕으로<br>사업자의 입장에서 가장 현실적인 해결책을 고민합니다.</blockquote>
-        <h3 class="fh">핵심 경력</h3>
-        <ul class="core">
-          <li><b>1996년</b><span>제33회 세무사 자격시험 합격</span></li>
-          <li><b>1997년 ~ 현재</b><span>세무법인 택스테크 울산분사무소 대표세무사</span></li>
-          <li><b>2005년</b><span>경남대학교 대학원 경영학과 회계학전공 경영학박사</span></li>
-          <li><b>다수의 공공·전문 활동</b><span>세무서 및 지방세 관련 위원회, 한국세무사회 등 활동</span></li>
+<!-- 최주익 프로필 팝업 -->
+<dialog class="pm" id="pm-juik" aria-labelledby="pm-juik-t">
+  <button type="button" class="pm-x" aria-label="닫기">&times;</button>
+  <div class="pm-scroll">
+    <div class="pm-head">
+      <div class="pm-info">
+        <h2 id="pm-juik-t">최주익 <small>대표세무사</small></h2>
+        <h3>Contact</h3>
+        <ul class="pm-ct">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><span>세무법인 택스테크 울산분사무소<br>(44717) 울산광역시 남구 화합로120번길 8, 402호 (삼산동, 은산빌딩)</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span><a href="tel:0522572680">052-257-2680</a> · <a href="tel:01045682680">010-4568-2680</a></span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><a href="mailto:taxtech1@nate.com">taxtech1@nate.com</a></span></li>
         </ul>
-        <h3 class="fh">전문분야</h3>
-        <ul class="field-tags">
-          <li>세무조사·불복 대응</li><li>지방세</li><li>회계·세무 실무</li>
-        </ul>
-        <p class="field-note">국세심사·이의신청심의·납세자보호위원회, 지방세심의위원회 위원 활동과 회계학·세무관리 학위 등 경력을 근거로 정리한 분야입니다.</p>
-        <div class="pc-links" style="margin-top:18px">
-          <a class="btn" href="index.html#consult">세무 상담 신청</a>
-        </div>
-        <dl class="p-contact" style="margin-top:6px;padding-top:16px;border-top:1px solid var(--line)">
-          <div><dt>전화</dt><dd><a href="tel:0522572680">052-257-2680</a></dd></div>
-          <div><dt>휴대전화</dt><dd><a href="tel:01045682680">010-4568-2680</a></dd></div>
-          <div><dt>이메일</dt><dd><a href="mailto:taxtech1@nate.com">taxtech1@nate.com</a></dd></div>
-          <div><dt>사무실</dt><dd>(44717) 울산광역시 남구 화합로120번길 8, 402호 (삼산동, 은산빌딩)</dd></div>
-        </dl>
+        <a class="btn pm-cta" href="index.html#consult">세무 상담 신청</a>
       </div>
+      <div class="ph ju" role="img" aria-label="대표세무사 최주익 프로필 사진"></div>
     </div>
-
-    <div class="faq acc" style="margin-top:44px">
-      <details open><summary>학력</summary>
-        <div><ul class="cv nolabel"><li>경남대학교 경상대학 회계학과 (경영학사)</li><li>동국대학교 사회과학대학원 경영학과 세무관리전공 (경영학석사, 2002.02.15)</li><li>경남대학교 대학원 경영학과 회계학전공 (경영학박사, 2005.08.19)</li></ul></div></details>
-      <details open><summary>경력</summary>
-        <div><ul class="cv"><li><span class="tg was">전</span><span>동원과학기술대학교 경영회계과 시간강사, 겸임전임강사</span></li><li><span class="tg was">전</span><span>동국대학교 경영학부 외래강사, 겸임교수, 사회과학대학원 부동산학과 겸임교수</span></li><li><span class="tg was">전</span><span>경남대학교, 울산과학대학교 강사 역임</span></li><li><span class="tg now">현</span><span>1997년부터 세무법인 택스테크 울산분사무소 대표세무사</span></li></ul></div></details>
-      <details open><summary>자격</summary>
-        <div><ul class="cv nolabel"><li>1996년 11월 세무사 자격시험(제33회) 합격</li></ul></div></details>
-      <details open><summary>상훈</summary>
-        <div><ul class="cv dated"><li><time>2018.12.13</time><span>표창패 / 울산광역시장 / 제22224호</span></li><li><time>2016.03.03</time><span>표창장 / 부산지방국세청장 / 제13913호</span></li><li><time>2011.01.04</time><span>공로상 / 한국세무사회장</span></li><li><time>2009.05.13</time><span>공로상 / 부산지방세무사회장 / 제2009-6호</span></li><li><time>2004.09.09</time><span>공로상 / 한국세무사회장</span></li><li><time>1999.03.03</time><span>표창장 / 울산세무서장 / 제823호</span></li></ul></div></details>
-      <details><summary>강의 · 기관 활동</summary>
-        <div>
-          <div class="two-col" style="margin-top:6px">
+    <div class="pm-body">
+      <div>
+        <h4 class="mh">전문분야</h4>
+        <ul class="field-tags">
+          <li>상속세</li><li>증여세</li><li>양도소득세</li><li>세무조사·불복 대응</li><li>지방세</li><li>회계·세무 실무</li>
+        </ul>
+        <h4 class="mh">학력</h4>
+        <ul class="cv nolabel"><li>경남대학교 경상대학 회계학과 (경영학사)</li><li>동국대학교 사회과학대학원 경영학과 세무관리전공 (경영학석사, 2002.02.15)</li><li>경남대학교 대학원 경영학과 회계학전공 (경영학박사, 2005.08.19)</li></ul>
+        <h4 class="mh">자격</h4>
+        <ul class="cv nolabel"><li>1996년 11월 세무사 자격시험(제33회) 합격</li></ul>
+        <h4 class="mh">상훈</h4>
+        <ul class="cv dated"><li><time>2018.12.13</time><span>표창패 / 울산광역시장 / 제22224호</span></li><li><time>2016.03.03</time><span>표창장 / 부산지방국세청장 / 제13913호</span></li><li><time>2011.01.04</time><span>공로상 / 한국세무사회장</span></li><li><time>2009.05.13</time><span>공로상 / 부산지방세무사회장 / 제2009-6호</span></li><li><time>2004.09.09</time><span>공로상 / 한국세무사회장</span></li><li><time>1999.03.03</time><span>표창장 / 울산세무서장 / 제823호</span></li></ul>
+      </div>
+      <div>
+        <h4 class="mh">경력</h4>
+        <ul class="cv"><li><span class="tg was">전</span><span>동원과학기술대학교 경영회계과 시간강사, 겸임전임강사</span></li><li><span class="tg was">전</span><span>동국대학교 경영학부 외래강사, 겸임교수, 사회과학대학원 부동산학과 겸임교수</span></li><li><span class="tg was">전</span><span>경남대학교, 울산과학대학교 강사 역임</span></li><li><span class="tg now">현</span><span>세무법인 택스테크 울산분사무소 대표세무사</span></li></ul>
+        <h4 class="mh">강의 · 기관 활동</h4>
+        <div class="two-col" style="margin-top:6px">
             <div class="bio now-box"><h4>현재 활동</h4><ul class="cv"><li><span class="tg now">현</span><span>울산광역시 중구 마을세무사</span></li><li><span class="tg now">현</span><span>울산가정(지방)법원 전문가후견인 및 후견감독인 후보자, 후견협의회 위원</span></li></ul></div>
             <div class="bio"><h4>위원회 · 기관 활동 (전)</h4><ul class="cv cols2"><li><span class="tg was">전</span><span>울산광역시 중구 지방세심의위원회 위원</span></li><li><span class="tg was">전</span><span>울산세무서 이의신청심의 위원</span></li><li><span class="tg was">전</span><span>울산세무서 고충처리위원회 위원</span></li><li><span class="tg was">전</span><span>울산세무서 납세자보호위원회 위원</span></li><li><span class="tg was">전</span><span>동울산세무서 국세심사위원회 위원</span></li><li><span class="tg was">전</span><span>한국세무사회 전산세무회계자격시험 출제위원회 위원</span></li><li><span class="tg was">전</span><span>한국세무사회 세무연수원 교수</span></li><li><span class="tg was">전</span><span>울산광역시 중구 중구종합사회복지관 운영위원 및 운영위원장</span></li><li><span class="tg was">전</span><span>울산광역시 결산검사위원</span></li><li><span class="tg was">전</span><span>울산사회복지공동모금회 배분분과실행위원회, 시민감시원위원회, 시민참여위원회 위원</span></li><li><span class="tg was">전</span><span>울산광역시 중구군 중부종합사회복지관 운영위원 및 운영위원장</span></li><li><span class="tg was">전</span><span>KBS울산방송국 시청자위원회 위원</span></li><li><span class="tg was">전</span><span>재단법인 울산정보산업진흥원 감사(비상임)</span></li><li><span class="tg was">전</span><span>동울산세무서 청원심의회 위원</span></li></ul></div>
           </div>
-        </div></details>
-    </div>
-  </div>
-</section>
-
-<section class="person-block soft" id="heejung">
-  <div class="wrap">
-    <div class="tm">
-      <div class="rv"><div class="ph hj" role="img" aria-label="세무사 최희정 프로필 사진"></div></div>
-      <div class="rv">
-        <span class="role">세무사</span>
-        <h2 class="name">최희정</h2>
-        <blockquote class="q">어렵고 복잡한 세금 이야기를<br>이해하기 쉽게 설명하고 빠르게 소통합니다.</blockquote>
-        <h3 class="fh">경력</h3>
-        <ul class="cv"><li><span class="tg now">현</span><span>세무법인 택스테크 울산분사무소 세무사</span></li></ul>
-        <h3 class="fh">자격</h3>
-        <ul class="cv nolabel"><li>2025년 11월 제62회 세무사 자격시험 합격</li></ul>
-        <h3 class="fh">중점 분야</h3>
-        <ul class="field-tags">
-          <li>쉬운 세무 설명</li><li>빠른 소통</li><li>세무 콘텐츠 (인스타그램·스레드)</li>
-        </ul>
-        <p class="field-note">세무사 활동 이력이 쌓이는 대로 전문분야를 구체적으로 업데이트합니다.</p>
-        <div class="pc-links" style="margin-top:18px">
-          <a class="btn" href="index.html#consult">세무 상담 신청</a>
-          <a class="btn line" href="stories.html">세무 이야기 보기</a>
-        </div>
-        <dl class="p-contact" style="margin-top:6px;padding-top:16px;border-top:1px solid var(--line)">
-          <div><dt>휴대전화</dt><dd><a href="tel:01065642680">010-6564-2680</a></dd></div>
-          <div><dt>이메일</dt><dd><a href="mailto:taxchj@naver.com">taxchj@naver.com</a></dd></div>
-        </dl>
       </div>
     </div>
   </div>
-</section>
+</dialog>
+
+<!-- 최희정 프로필 팝업 -->
+<dialog class="pm" id="pm-heejung" aria-labelledby="pm-heejung-t">
+  <button type="button" class="pm-x" aria-label="닫기">&times;</button>
+  <div class="pm-scroll">
+    <div class="pm-head">
+      <div class="pm-info">
+        <h2 id="pm-heejung-t">최희정 <small>세무사</small></h2>
+        <h3>Contact</h3>
+        <ul class="pm-ct">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><span>세무법인 택스테크 울산분사무소<br>(44717) 울산광역시 남구 화합로120번길 8, 402호 (삼산동, 은산빌딩)</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span><a href="tel:01065642680">010-6564-2680</a></span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><a href="mailto:taxchj@naver.com">taxchj@naver.com</a></span></li>
+        </ul>
+        <a class="btn pm-cta" href="index.html#consult">세무 상담 신청</a>
+      </div>
+      <div class="ph hj" role="img" aria-label="세무사 최희정 프로필 사진"></div>
+    </div>
+    <div class="pm-body">
+      <div>
+        <h4 class="mh">경력</h4>
+        <ul class="cv"><li><span class="tg now">현</span><span>세무법인 택스테크 울산분사무소 세무사</span></li></ul>
+      </div>
+      <div>
+        <h4 class="mh">자격</h4>
+        <ul class="cv nolabel"><li>2025년 11월 제62회 세무사 자격시험 합격</li></ul>
+      </div>
+    </div>
+  </div>
+</dialog>
 </main>
 
 <footer>
   <div class="wrap">
-    <strong>TAX CHOI · 세무법인 택스테크 울산분사무소</strong> 대표세무사 최주익, 세무사 최희정<br>
+    <strong>TAX TECH · 세무법인 택스테크 울산분사무소</strong> 대표세무사 최주익, 세무사 최희정<br>
     (44717) 울산광역시 남구 화합로120번길 8, 402호 (삼산동, 은산빌딩)<br>
     TEL (052) 257-2680 · FAX (052) 257-2688 · 운영시간 09:00 ~ 17:00<br>
     이 사이트의 내용은 일반적인 안내이며, 개별 사안은 상담을 통해 확인해 주세요.<br>
@@ -875,6 +944,38 @@ blockquote.q{margin:0 0 14px;padding:2px 0 2px 14px;border-left:3px solid var(--
     }
   } catch (err) { root.classList.remove('anim'); }
   var y = document.getElementById('y'); if (y) y.textContent = new Date().getFullYear();
+})();
+</script>
+<script>
+(function(){
+  var root=document.documentElement, last=null;
+  function dlg(id){return document.getElementById('pm-'+id);}
+  function openPm(id,btn){
+    var d=dlg(id); if(!d) return;
+    last=btn||null;
+    if(!d.open){ if(d.showModal){d.showModal();} else {d.setAttribute('open','');} }
+    root.classList.add('pm-lock');
+    var sc=d.querySelector('.pm-scroll'); if(sc) sc.scrollTop=0;
+    try{history.replaceState(null,'','#'+id);}catch(e){}
+  }
+  document.querySelectorAll('[data-open]').forEach(function(b){
+    b.addEventListener('click',function(){openPm(b.getAttribute('data-open'),b);});
+  });
+  document.querySelectorAll('dialog.pm').forEach(function(d){
+    d.querySelector('.pm-x').addEventListener('click',function(){d.close();});
+    d.addEventListener('click',function(e){ if(e.target===d) d.close(); });
+    d.addEventListener('close',function(){
+      root.classList.remove('pm-lock');
+      try{history.replaceState(null,'',location.pathname+location.search);}catch(e){}
+      if(last&&last.focus) last.focus();
+    });
+  });
+  function fromHash(){
+    var h=location.hash.replace('#','');
+    if(h==='juik'||h==='heejung') openPm(h,document.querySelector('[data-open="'+h+'"]'));
+  }
+  window.addEventListener('hashchange',fromHash);
+  fromHash();
 })();
 </script>
 </body>
